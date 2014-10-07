@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="customTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">@dimen/title_bar_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+        <item name="android:windowBackground">@color/base</item>
+    </style>
+
+    <style name="splashTheme" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:colorBackground">@color/base</item>
+    </style>
+
+</resources>
