@@ -1,28 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    style="@style/customLayout"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".LoginActivity">
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"></View>
-
-    <TextView
-        android:id="@+id/textId"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/widget_margin"
-        android:clickable="true"
-        android:text="@string/hello_world"
-        android:textColor="@color/darkGrey"
-        android:textSize="20sp"
-        android:textStyle="normal|bold" />
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_bottom_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_top_margin">
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"></View>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
 
-</LinearLayout>
+        <LinearLayout style="@style/customLayout">
+
+            <TextView
+                android:id="@+id/textId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/widget_margin"
+                android:clickable="true"
+                android:text="@string/hello_world"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextId"
+                style="@style/custom.TextEdit"
+                android:hint="@string/edit_text"
+                android:inputType="text"></EditText>
+
+            <Button
+                android:id="@+id/changeTextButtonId"
+                style="@style/custom.Button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/change_text_button" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/newActivityButton"
+            style="@style/custom.Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_button" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+
+    </LinearLayout>
+
+</ScrollView>
